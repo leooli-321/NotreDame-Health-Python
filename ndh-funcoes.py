@@ -1,3 +1,7 @@
+# Debora Costa - RM554196
+# Leonardo de Oliveira - RM554024
+# Sara Sousa - RM552656
+
 # Funções de validação de CPF e senha
 def validar_cpf(cpf):
     return len(cpf) == 11
