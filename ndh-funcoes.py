@@ -2,6 +2,7 @@
 # Leonardo de Oliveira - RM554024
 # Sara Sousa - RM552656
 
+
 # Funções de validação de CPF e senha
 def validar_cpf(cpf):
     return len(cpf) == 11
@@ -23,7 +24,7 @@ def criar_perfil_usuario():
             cpf = input("CPF: ")
 
 # Captura de informações pessoais do usuário
-    idade = input("Idade: ")
+    idade = int(input("Idade: "))
     sexo = input("Sexo: ")
     email = input("E-mail: ")
     senha = input("Senha (a senha deve conter oito ou mais caracteres): ")
@@ -38,14 +39,14 @@ def criar_perfil_usuario():
 # Captura de informações pessoais do usuário
     alergias = input("Alergias: ")
     tipo_convenio = input("Tipo do Convênio: ")
-    telefone = input("Telefone: ")
+    telefone = int(input("Telefone: "))
 
 # Lista que armazena as informações de endereço do usuário e retorna a partir das posições de cada campo
     endereco = [
         input("Logradouro: "), #Posição 0
-        input("CEP: "), #Posição 1
+        int(input("CEP: ")), #Posição 1
         input("Bairro: "), #Posição 2
-        input("Número: ") #Posição 3
+        int(input("Número: ")) #Posição 3
     ]
 
 # Exibe o perfil do usuário criado com sucesso
