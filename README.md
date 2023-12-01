@@ -1,3 +1,7 @@
+Debora Costa - RM554196
+Leonardo de Oliveira - RM554024
+Sara Sousa - RM552656
+
 # NotreDame-Health-Python
 Simulação de funcionalidades da aplicação "NotreDame Health" usando Python
 
