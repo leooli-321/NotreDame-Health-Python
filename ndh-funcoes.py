@@ -131,3 +131,85 @@ def acessar_acompanhamento_psicologico():
     print("\nACOMPANHAMENTO PSICOLÓGICO\n")
     print(f"Número de Sessões: {numero_sessoes}\nNotas: {notas}\nRecomendações: {recomendacoes}")
     print(f"Tema da Sessão: {tema_sessao}\nAvaliação: {avaliacao}\nPróximo Encontro: {proximo_encontro}")
+
+# Função para acessar lembretes de medicamentos utilizando conceito de listas e dicionários
+def acessar_lembretes_medicamentos():
+
+    lembretes = [] # Lista vazia para armazenar os lembretes de medicamentos
+
+    while True:
+        # Captura de informações sobre os lembretes de medicamentos
+        nome_medicamento = input("\nNome do Medicamento: ")
+        dosagem_medicamento = input("Dosagem do Medicamento: ")
+        horario_medicamento = input("Horário do Medicamento: ")
+        data_inicio = input("Data de Início: ")
+
+# Adiciona os dados dos lembretes em um dicionário e coloca esse dicionário na lista de lembretes
+        lembretes.append(
+            {
+                "Nome do Medicamento": nome_medicamento,
+                "Dosagem do Medicamento": dosagem_medicamento,
+                "Horário do Medicamento": horario_medicamento,
+                "Data de Início": data_inicio,
+            }
+        )
+
+# Pergunta se o usuário deseja adicionar mais um medicamento
+        opcao = input("\nDeseja adicionar mais um medicamento? (S/N): ")
+        if opcao.lower() != "s":
+            break
+
+# Exibe os lembretes de medicamentos adicionados
+    print("\nLEMBRETES DE MEDICAMENTOS\n")
+    for lembrete in lembretes: # Percorre cada item na lista lembretes
+        for chave, valor in lembrete.items(): # Itera sobre o dicionário de lembretes
+            print(f"{chave}: {valor}") # Imprime cada chave e seu respectivo valor
+        print("\n") # Adiciona uma linha em branco após cada lembrete para melhorar a legibilidade
+
+# Função para exibir o menu de funcionalidades e realizar a escolha do usuário
+def menu_funcionalidades():
+    # Lista das opções de funcionalidades disponíveis
+    opcoes_funcionalidades = [
+        "Acessar Exames",
+        "Acessar Acompanhamento Psicológico",
+        "Acessar Lembretes de Medicamentos",
+    ]
+
+# Exibição das opções no menu
+    print("\nSelecione uma funcionalidade para acessar:\n")
+    for i, opcao in enumerate(opcoes_funcionalidades):
+        print(f"{i + 1}. {opcao}")
+
+# Captura da escolha do usuário
+    escolha_funcionalidade = int(input("\nDigite o número da funcionalidade desejada: "))
+
+ # Verificação da escolha e chamada da funcionalidade correspondente
+    if escolha_funcionalidade == 1:
+        acessar_exames()
+    elif escolha_funcionalidade == 2:
+        acessar_acompanhamento_psicologico()
+    elif escolha_funcionalidade == 3:
+        acessar_lembretes_medicamentos()
+    else:
+        print("Opção inválida.")
+
+# Função principal
+def main():
+
+ print("\nBEM-VINDO(A) AO NOTREDAME HEALTH!")
+
+# Direciona para a criação do perfil do usuário1
+ criar_perfil_usuario()
+
+# Loop para o usuário acessar múltiplas funcionalidades até decidir sair
+ while True:
+  menu_funcionalidades()
+
+  opcao = input("\nDeseja acessar outra funcionalidade? (S/N): ")
+  if opcao.lower() != "s":
+    print("\nAgradecemos o acesso ao NotreDame Health! :)")
+    break
+
+if __name__ == "__main__":
+    main()
+
