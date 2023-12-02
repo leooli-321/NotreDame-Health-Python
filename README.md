@@ -34,3 +34,7 @@ O projeto de solução proposto, "NotreDame Health", é um sistema de gerenciame
 - **Python:** O código foi escrito em Python, portanto é necessário ter o interpretador Python instalado no ambiente de execução para executar o programa.
 - **Entrada de Dados:** O programa utiliza entrada de dados pelo console (usando a função input) para capturar informações do usuário.
 - **Validação de CPF e Senha:** As funções `validar_cpf` e `validar_senha` garantem a validação do CPF (11 dígitos) e da senha (com pelo menos 8 caracteres), respectivamente.
+
+## Vídeo Explicativo - NotreDame Health
+
+https://photos.app.goo.gl/jxjb461Ac2D7SrFB9
