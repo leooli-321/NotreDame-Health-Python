@@ -1,15 +1,21 @@
-Debora Costa - RM554196  
+# Projeto Global Solution - NotreDame Health
+
+Faculdade de Informática e Administração Paulista - FIAP
+
+Turma: 1TDSPS
+
+# Colaboradores - NotreDame Health
+
+Débora Costa - RM554196  
 Leonardo de Oliveira - RM554024  
 Sara Sousa - RM552656  
 
-
-
 # NotreDame-Health-Python
-Simulação de funcionalidades da aplicação "NotreDame Health" usando Python
+Simulação das funcionalidades da aplicação "NotreDame Health" utilizando a linguagem de programação Python.
 
 ## Descrição do Projeto:
 
-O projeto "NotreDame Health" é um sistema de gerenciamento de informações de saúde de usuários. Ele permite a criação de um perfil do usuário, onde são capturadas informações pessoais, incluindo nome, CPF, idade, sexo, e-mail, alergias, tipo de convênio, telefone e endereço. Além disso, o sistema oferece funcionalidades para acessar o histórico de saúde do usuário (tanto padrão quanto personalizado para pacientes oncológicos), informações sobre exames realizados, acompanhamento psicológico e lembretes de medicamentos.
+O projeto de solução proposto, "NotreDame Health", é um sistema de gerenciamento de informações de saúde de usuários. Ele permite a criação de um perfil do usuário, onde são capturadas informações pessoais, incluindo nome, CPF, idade, sexo, e-mail, alergias, tipo de convênio, telefone e endereço. Além disso, o sistema oferece funcionalidades para acessar o histórico de saúde do usuário (tanto padrão quanto personalizado para pacientes oncológicos), informações sobre exames realizados, acompanhamento psicológico e lembretes de medicamentos.
 
 ## Funcionalidades Implementadas:
 - **Criação de Perfil de Usuário:** Captura de informações pessoais básicas.
