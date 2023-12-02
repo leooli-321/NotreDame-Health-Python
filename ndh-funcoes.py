@@ -60,3 +60,74 @@ def criar_perfil_usuario():
         acessar_historico_saude_personalizado()
     else:
         acessar_historico_saude()
+
+# Função para acessar o histórico de saúde personalizado
+def acessar_historico_saude_personalizado():
+    # Captura de informações do histórico de saúde padrão
+    batimentos_cardiacos = int(input("\nBatimentos Cardíacos: "))
+    niveis_glicose = float(input("Níveis de Glicose: "))
+    peso = float(input("Peso: "))
+    atividades_diarias = int(input("Duração de Atividades Físicas Diárias: "))
+    duracao_sono = int(input("Duração do Sono: "))
+
+    # Captura de informações específicas para pacientes oncológicos
+    print(f"\nINFORMAÇÕES ADICIONAIS DO HISTÓRICO PERSONALIZADO\n")
+    tipo_cancer = input("Tipo de câncer: ")
+    estagio_cancer = input("Estágio do câncer: ")
+    tipo_tratamento = input("Tipo de tratamento: ")
+    resposta_tratamento = input("Resposta ao tratamento: ")
+
+    pressao_arterial = [
+        int(input("Pressão Sistólica: ")),
+        int(input("Pressão Diastólica: "))
+    ]
+# Exibe o histórico de saúde personalizado
+    print("\nHISTÓRICO DE SAÚDE PERSONALIZADO\n")
+    print(f"Batimentos Cardíacos: {batimentos_cardiacos}\nNíveis de Glicose: {niveis_glicose}\nPeso: {peso}\nDuração de Atividades Físicas Diárias: {atividades_diarias}\nDuração do Sono: {duracao_sono}\nTipo de câncer: {tipo_cancer}"
+          f"\nEstágio do câncer: {estagio_cancer}\nTipo de tratamento: {tipo_tratamento}\nResposta ao tratamento: {resposta_tratamento}")
+    print(f"Pressão Sistólica: {pressao_arterial[0]}\nPressão Diastólica: {pressao_arterial[1]}")
+
+# Função para acessar o histórico de saúde padrão
+def acessar_historico_saude():
+    # Captura de informações do histórico de saúde padrão
+    batimentos_cardiacos = int(input("\nBatimentos Cardíacos: "))
+    niveis_glicose = int(input("Níveis de Glicose: "))
+    peso = float(input("Peso: "))
+    atividades_diarias = int(input("Duração de Atividades Físicas Diárias: "))
+    duracao_sono = int(input("Duração do Sono: "))
+
+    pressao_arterial = [
+        int(input("Pressão Sistólica: ")),
+        int(input("Pressão Diastólica: "))
+    ]
+# Exibe o histórico de saúde padrão
+    print("\nHISTÓRICO DE SAÚDE\n")
+    print(f"Batimentos Cardíacos: {batimentos_cardiacos}\nNíveis de Glicose: {niveis_glicose}\nPeso: {peso}")
+    print(f"Duração de Atividades Físicas Diárias: {atividades_diarias}\nDuração do Sono: {duracao_sono}")
+    print(f"Pressão Sistólica: {pressao_arterial[0]}\nPressão Diastólica: {pressao_arterial[1]}")
+
+# Função para acessar informações sobre exames
+def acessar_exames():
+    # Captura de informações sobre exames
+    data_exame = input("\nData do Exame: ")
+    tipo_exame = input("Tipo de Exame: ")
+    resultado_exame = input("Resultado do Exame: ")
+
+# Exibe informações sobre o exame
+    print("\nEXAMES\n")
+    print(f"Data do Exame: {data_exame}\nTipo de Exame: {tipo_exame}\nResultado do Exame: {resultado_exame}")
+
+# Função para acessar informações sobre acompanhamento psicológico
+def acessar_acompanhamento_psicologico():
+    # Captura de informações sobre acompanhamento psicológico
+    numero_sessoes = int(input("\nNúmero de Sessões: "))
+    notas = input("Notas (descrição) sobre a sessão: ")
+    recomendacoes = input("Recomendações: ")
+    tema_sessao = input("Tema da Sessão: ")
+    avaliacao = input("Avaliação da Sessão (de 0 a 10 e o porquê): ")
+    proximo_encontro = input("Próximo Encontro (expectativa, data etc): ")
+
+# Exibe informações sobre o acompanhamento psicológico
+    print("\nACOMPANHAMENTO PSICOLÓGICO\n")
+    print(f"Número de Sessões: {numero_sessoes}\nNotas: {notas}\nRecomendações: {recomendacoes}")
+    print(f"Tema da Sessão: {tema_sessao}\nAvaliação: {avaliacao}\nPróximo Encontro: {proximo_encontro}")
