@@ -29,7 +29,7 @@ def criar_perfil_usuario():
     senha = input("Senha (a senha deve conter oito ou mais caracteres): ")
 
     while True:
-        if validar_senha(senha): # Verifica se a senha inserida é válid
+        if validar_senha(senha): # Verifica se a senha inserida é válida
             break # Encerra o loop se a senha for válida
         else: # Solicita ao usuário inserir a senha novamente em caso de inválida
             print("Senha inválida. Por favor, insira uma senha válida (pelo menos 8 caracteres).")
@@ -198,7 +198,7 @@ def main():
 
  print("\nBEM-VINDO(A) AO NOTREDAME HEALTH!")
 
-# Direciona para a criação do perfil do usuário1
+# Direciona para a criação do perfil do usuário
  criar_perfil_usuario()
 
 # Loop para o usuário acessar múltiplas funcionalidades até decidir sair
